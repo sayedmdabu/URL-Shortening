@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "1b49a6d5-bfe6-49dc-b44c-6953a74d629a",
+		"name": "Shorten URL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31785494",
+		"_collection_link": "https://teamagriculture.postman.co/workspace/Agriculture~0693bffc-9935-4dc3-896d-d8a7ee438fbe/collection/31785494-1b49a6d5-bfe6-49dc-b44c-6953a74d629a?action=share&source=collection_link&creator=31785494"
+	},
+	"item": [
+		{
+			"name": "shorten url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "original_url",
+							"value": "https://liveblog.pro/en/tips-on-liveblogging-an-awards-show-how-to-make-coverage-better/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shortening.test/api/api-shorten",
+					"protocol": "https",
+					"host": [
+						"shortening",
+						"test"
+					],
+					"path": [
+						"api",
+						"api-shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get original_url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "original_url",
+							"value": "https://liveblog.pro/en/tips-on-liveblogging-an-awards-show-how-to-make-coverage-better/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shortening.test/api/base/07c7a4a2",
+					"protocol": "https",
+					"host": [
+						"shortening",
+						"test"
+					],
+					"path": [
+						"api",
+						"base",
+						"07c7a4a2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
