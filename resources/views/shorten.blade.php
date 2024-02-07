@@ -59,7 +59,7 @@
                 <div class="loading">Shorten link</div>
                 @if (session('success'))
                     <div class="alert alert-success" role="alert">
-                        {{ session('success') }}
+                        <a href="{{ session('success') }}" target="_blank" style="color: #2281c2;">{{ session('success') }}</a>
                     </div>
                 @endif
             </div>
