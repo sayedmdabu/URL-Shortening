@@ -52,7 +52,8 @@ class ShortenController extends Controller
             return $url->original_url;
         } else {
             // Handle not found (404) or any other logic
-            abort(404);
+            // abort(404);
+            return "Short URL not found.";
         }
     }
 }

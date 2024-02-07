@@ -31,6 +31,8 @@ class URLAPIController extends Controller
         $lastPath = basename(parse_url($shortUrl, PHP_URL_PATH));
         $baseURL = (new ShortenController)->redirectShortUrlLink($lastPath);
 
+        // dd($baseURL);
+
         if ($baseURL) {
             return response()->json([
                 'success' => true,
